@@ -15,6 +15,6 @@ The objective of this project is to explore how the above mentioned limitations 
 
 3) Enhancing existing solution either by adding support for fault-tolerance or support for multiple consistency guarantees, or implementing a new update propagation algorithm that has lower complexity, resource usage and higher degree of concurrent updates. 
 
-A more detailed presentation on the motivation and objectives of this project can be found [a here](rxdds-drp.pptx) 
+A more detailed presentation on the motivation and objectives of this project can be found [here](rxdds-drp.pptx) 
 
 
