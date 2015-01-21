@@ -7,13 +7,18 @@ Distributed Reactive Programming(DRP) provides a number of advantages over obser
 However, ensuring the proper order of update/change propagation to ensure consistent results is a challenge in the distributed setting due to failures and network latencies. Several reactive languages ensure consistent or glitch-free update propagation in the local setting however very few reactive languages that support distribution also provide glitch-freedom under distribution. 
 Moreover, those that do provide glitch-free DRP assume that failures cannot happen, have limited degree of concurrent update propagation, have high co-ordination/synchronization overhead for propagating change or don't offer relaxed consistency guarnatees for applications to better trade-off desired consistency and performance. 
 
-The objective of this project is to explore how the above mentioned limitations can be addressed in our DRP system that integrates Real Time Innovation(RTI)'s implementation of DDS with Microsoft Rx, while leveraging the inbuilt QoS policies that DDS offers. The anticipated milestones for the project are: 
+The objective of this project is to explore how the above mentioned limitations can be addressed in [rxdds](https://github.com/rticommunity/rticonnextdds-reactive)- our DRP system that integrates Real Time Innovation(RTI)'s implementation of DDS with Microsoft Rx, while leveraging the inbuilt QoS policies that DDS offers. 
 
-1) Understanding the failure modes of a DRP application and the relevant QoS policies that can be used to redress the same. Then, integrate support for pertinent DDS QoS policies in our existing solution. 
+The anticipated milestones for the project are: 
 
-2) Implementing state-of-the-art SID-UP (Source Identifier Update Propagation) algorithm for consistent change propagation in our solution as a starting point; implementing a sample test application and logging assessment metrics like - number of co-ordination messages, degree of parallel updates under different network topologies and resource utilization. 
+1. Understanding the failure modes of a DRP application and the relevant DDS QoS policies that can be used to redress the same. Then, integrate support for pertinent DDS QoS policies in our existing solution. 
 
-3) Enhancing existing solution either by adding support for fault-tolerance or support for multiple consistency guarantees, or implementing a new update propagation algorithm that has lower complexity, resource usage and higher degree of concurrent updates. 
+2. Implementing state-of-the-art SID-UP (Source Identifier Update Propagation) algorithm for consistent change propagation in our solution as a starting point; implementing a sample test application and logging assessment metrics like - number of co-ordination messages, degree of parallel updates under different network topologies and resource utilization. 
+
+3. Enhancing existing solution either by:
+..1. Adding support for fault-tolerance 
+..2. Support for multiple consistency guarantees
+..3. Implementing a new update propagation algorithm that has lower complexity, resource usage and higher degree of concurrent updates. 
 
 A more detailed presentation on the motivation and objectives of this project can be found [here](rxdds-drp.pptx) 
 
