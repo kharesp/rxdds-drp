@@ -15,9 +15,9 @@ The anticipated milestones for the project are:
 2. Implementing state-of-the-art SID-UP (Source Identifier Update Propagation) algorithm for consistent change propagation in our solution as a starting point; implementing a sample test application and logging assessment metrics like - number of co-ordination messages, degree of parallel updates under different network topologies and resource utilization. 
 
 3. Enhancing existing solution either by
-i. Adding support for fault-tolerance 
-j. Support for multiple consistency guarantees
-k. Implementing a new update propagation algorithm that has lower complexity, resource usage and higher degree of concurrent updates. 
+  ..1. Adding support for fault-tolerance
+  ..2. Support for multiple consistency guarantees
+  ..3. Implementing a new update propagation algorithm that has lower complexity, resource usage and higher degree of concurrent updates. 
 
 A more detailed presentation on the motivation and objectives of this project can be found [here](rxdds-drp.pptx) 
 
